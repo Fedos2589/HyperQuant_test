@@ -1,0 +1,66 @@
+.bots {
+  padding: 10px 0;
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .bot {
+    width: 114px;
+    height: 105px;
+    background-color: $darkBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 4px;
+    text-decoration: none;
+
+    .bot__image {
+      width: 45px;
+      height: 35px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: 10px;
+    }
+
+    &#yellow_bot .bot__image {
+      height: 45px;
+      margin-bottom: 5px;
+    }
+
+    .bot__description {
+      @extend .regular-text;
+
+      line-height: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+    }
+
+    .bot__value {
+      @extend .regular-text;
+
+      line-height: 15px;
+      color: $green;
+
+      &.negative {
+        color: $red;
+      }
+    }
+
+    &.active {
+      box-shadow: inset 0 0 20px 5px $shadow;
+    }
+  }
+}

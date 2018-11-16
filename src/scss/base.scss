@@ -1,0 +1,40 @@
+$darkestBlue: #1d2637;
+$darkBlue: #252d40;
+$shadow: #394860;
+$white: #fff;
+$grayBlue: #546076;
+$green: #78a659;
+$red: #d2447b;
+$orange: #e4972d;
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: $darkestBlue;
+  color: $grayBlue;
+}
+
+.container {
+  margin: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.regular-text {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+}
+
+.hide {
+  display: none;
+}

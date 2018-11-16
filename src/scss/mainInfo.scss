@@ -1,0 +1,50 @@
+.mainInfo {
+  padding: 10px 0;
+
+  .container {
+    align-items: flex-end;
+  }
+
+  .title,
+  .value {
+    @extend .main-text;
+
+    text-transform: uppercase;
+  }
+
+  .value {
+    color: $white;
+  }
+
+  .capital {
+    display: flex;
+    flex-direction: column;
+    margin-right: 23px;
+
+    .value {
+      font-size: 34px;
+      font-weight: 300;
+      line-height: 35px;
+    }
+  }
+
+  .details__item {
+    .value {
+      margin-left: 10px;
+      margin-right: 18px;
+      position: relative;
+
+      &::after{
+        display: inline-block;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-image: url(../img/h.png);
+        background-size: contain;
+        position: absolute;
+        right: -20px;
+        top: -1px;
+      }
+    }
+  }
+}

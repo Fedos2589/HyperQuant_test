@@ -1,0 +1,23 @@
+.header {
+  padding-bottom: 15px;
+  padding-top: 25px;
+
+  .hamburger {
+    width: 17px;
+    height: 12px;
+    background-image: url(../img/menuicon.svg);
+    background-size: cover;
+  }
+
+  .title {
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .refresh {
+    width: 16px;
+    height: 18px;
+    background-image: url(../img/refresh.svg);
+    background-size: contain;
+  }
+}
