@@ -1,4 +1,6 @@
 .menu {
+  background-color: $darkBlue;
+
   ul {
     padding: 0;
     margin: 0;
@@ -14,12 +16,13 @@
 
     text-decoration: none;
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     color: $grayBlue;
+    padding: 5px 0;
 
     &.active {
       color: $white;
